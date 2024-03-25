@@ -9,16 +9,16 @@ class color:
     fin = '\033[0m'
 
 banner = f"""
-{color.verde}01001101 01010010  01010011 01001000 01000001 01000100 01001111 01010111{color.fin}
+{color.rojo}01001101 01010010  01010011 01001000 01000001 01000100 01001111 01010111{color.fin}
 
 {color.azul}|=======================================================|
-| Script by              : {color.verde}#MR~SH4DOW                   {color.azul}|
-| Version                : {color.verde}Version  2.0               {color.azul}|
-| Estoy en Telegram   : {color.verde}https://t.me/SH4DOWH4CK {color.azul}|
-| HACKING & CARDING : {color.verde}@SHADOWH4CK               {color.azul}|
+| {color.morado}Script by              : {color.verde}#MR~SH4DOW                   {color.azul}|
+| {color.cyan}Version                : {color.amarillo}Version  2.0               {color.azul}|
+| {color.blanco}Estoy en Telegram   : {color.verde}https://t.me/SH4DOWH4CK {color.azul}|
+| {color.rojo}HACKING & CARDING : {color.cyan}@SHADOWH4CK               {color.azul}|
 |=======================================================|{color.fin}
 
-{color.verde} echo -n "$/MR~SHADOW@root >  " {color.fin}
+{color.rojo} echo -n "$/MR~SHADOW@root >  " {color.fin}
 """
 
 print(banner, end="")
