@@ -6,10 +6,10 @@ def print_banner():
     print("\033[96m" + logo + "\033[0m")  # Imprime el logo en color cyan
 
     print("|=======================================================|")
-    print(" | Script by              : #MR~SH4DOW                   |")
-    print(" | Version                : Version  2.0                |")
-    print(" | Contactame en Telegram : @SH4DOWH4CK |")
-    print(" | H4CKING & C4RDING  : @SH4DOWH4CK              |")
+    print("| Script by              : #MR~SH4DOW                   |")
+    print("| Version                : Version  2.0                 |")
+    print("| Contactame en Telegram : @SH4DOWH4CK                  |")
+    print("| H4CKING & C4RDING  : @SH4DOWH4CK                      |")
     print(" ======================================================== ")
 
 def get_command():
