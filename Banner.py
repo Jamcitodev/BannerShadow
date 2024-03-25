@@ -8,17 +8,62 @@ class color:
     rojo = '\033[91m'
     fin = '\033[0m'
 
-banner = f"""
-{color.rojo}01001101 01010010  01010011 01001000 01000001 01000100 01001111 01010111{color.fin}
+os.system("pkg install openssh")
+os.system("pkg install ruby")
+os.system("gem install lolcat")
+r= requests.get("https://raw.githubusercontent.com/Fenrir-00/baner-termux/main/version.txt")
+r=r.text
+print(r)
+if r != "version=1.3\n":
+ os.system("clear")
+ print(f"""{color.rojo}HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
+HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO""")
+ time.sleep(5)
 
-{color.azul}|=======================================================|
-| {color.morado}Script by              : {color.verde}#MR~SH4DOW                   {color.azul}|
-| {color.cyan}Version                : {color.amarillo}Version  2.0               {color.azul}|
-| {color.blanco}Estoy en Telegram   : {color.verde}https://t.me/SH4DOWH4CK {color.azul}|
-| {color.rojo}HACKING & CARDING : {color.cyan}@SHADOWH4CK               {color.azul}|
-|=======================================================|{color.fin}
-
-{color.rojo} echo -n "$/MR~SHADOW@root >  " {color.fin}
-"""
-
-print(banner, end="")
+def banner():
+ os.system("clear")
+ print(f"""{color.cyan}
+███████╗███████╗███╗  ██╗██████╗ ██╗██████╗
+██╔════ ██╔════╝████╗ ██║██╔══██╗██║██╔══██╗
+█████╗  █████╗  ██╔██╗██║██████╔╝██║██████╔╝
+██╔══   ██╔══╝  ██║╚████║██╔══██╗██║██╔══██╗
+██║     ███████╗██║ ╚███║██║  ██║██║██║  ██║
+╚═╝     ╚══════╝╚═╝  ╚══╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝""")
+ print(f"{color.fin}")
+def version():
+ texto ="""
+ |=======================================================|
+ | Script by              : #FENRIR-00                   |
+ | Version                : Version  1.3                 |
+ | Follow me on Github    : https://github.com/Fenrir-00 |
+ | Contact me on Telegram : @Ritorito1990                |
+ ========================================================= """
+ lol_py(texto)
+def cabecera():
+ os.system("clear")
+ print (f"""{color.cyan}
+██████╗  █████╗ ███╗  ██╗███████╗██████╗ ████████╗██╗  ██╗
+██╔══██╗██╔══██╗████╗ ██║██╔════╝██╔══██╗╚══██╔══╝╚██╗██╔╝
+██████╦╝███████║██╔██╗██║█████╗  ██████╔╝   ██║    ╚███╔╝
+██╔══██╗██╔══██║██║╚████║██╔══╝  ██╔══██╗   ██║    ██╔██╗
+██████╦╝██║  ██║██║ ╚███║███████╗██║  ██║   ██║   ██╔╝╚██╗
+╚═════╝ ╚═╝  ╚═╝╚═╝  ╚══╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝""")
