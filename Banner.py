@@ -5,12 +5,15 @@ def print_banner():
     logo = ''.join(chr(int(x, 2)) for x in logo.split())
     print("\033[96m" + logo + "\033[0m")  # Imprime el logo en color cyan
 
-    print("| Script by: MR~SHADOW                        |")
-    print("| En Telegram como: @SH4DOWH4CK |")
-    print("| HACKING & CARDING ©                         |")
+    print("|=======================================================|")
+    print(" | Script by              : #MR~SH4DOW                   |")
+    print(" | Version                : Version  2.0                |")
+    print(" | Contactame en Telegram : @SH4DOWH4CK |")
+    print(" | H4CKING & C4RDING  : @SH4DOWH4CK              |")
+    print(" ======================================================== ")
 
 def get_command():
-    return input("$/MR~SH4DOW@root > ")
+    return input("\033[91m$/MR~SH4DOW@root > \033[0m")  # Prompt de entrada en color rojo brillante
 
 def main():
     while True:
