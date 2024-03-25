@@ -21,6 +21,9 @@ def main():
         print_banner()  # Imprime el banner
         command = get_command()  # Obtiene el comando del usuario
         os.system(command)  # Ejecuta el comando
+        print("\033[92mÉXITO H4CKER DECENTE 🥷\033[0m")  # Mensaje de éxito en color verde
+        print("\nPresiona Enter para continuar...")
+        input()  # Espera a que el usuario presione Enter para continuar
 
 if __name__ == "__main__":
     main()
