@@ -1,69 +1,23 @@
-class color:
-    morado = '\033[95m'
-    blanco = '\033[97m'
-    cyan = '\033[96m'
-    azul  = '\033[94m'
-    verde = '\033[92m'
-    amarillo = '\033[93m'
-    rojo = '\033[91m'
-    fin = '\033[0m'
+import os
 
-os.system("pkg install openssh")
-os.system("pkg install ruby")
-os.system("gem install lolcat")
-r= requests.get("https://raw.githubusercontent.com/Fenrir-00/baner-termux/main/version.txt")
-r=r.text
-print(r)
-if r != "version=1.3\n":
- os.system("clear")
- print(f"""{color.rojo}HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO
-HAY UNA NUEVA VERSION ACTUALIZA EL REPOSITORIO""")
- time.sleep(5)
+def print_banner():
+    logo = "01001101 01010010 01111110 01010011 01001000 01000001 01000100 01001111 01010111"
+    logo = ''.join(chr(int(x, 2)) for x in logo.split())
+    print("\033[96m" + logo + "\033[0m")  # Imprime el logo en color cyan
 
-def banner():
- os.system("clear")
- print(f"""{color.cyan}
-███████╗███████╗███╗  ██╗██████╗ ██╗██████╗
-██╔════ ██╔════╝████╗ ██║██╔══██╗██║██╔══██╗
-█████╗  █████╗  ██╔██╗██║██████╔╝██║██████╔╝
-██╔══   ██╔══╝  ██║╚████║██╔══██╗██║██╔══██╗
-██║     ███████╗██║ ╚███║██║  ██║██║██║  ██║
-╚═╝     ╚══════╝╚═╝  ╚══╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝""")
- print(f"{color.fin}")
-def version():
- texto ="""
- |=======================================================|
- | Script by              : #FENRIR-00                   |
- | Version                : Version  1.3                 |
- | Follow me on Github    : https://github.com/Fenrir-00 |
- | Contact me on Telegram : @Ritorito1990                |
- ========================================================= """
- lol_py(texto)
-def cabecera():
- os.system("clear")
- print (f"""{color.cyan}
-██████╗  █████╗ ███╗  ██╗███████╗██████╗ ████████╗██╗  ██╗
-██╔══██╗██╔══██╗████╗ ██║██╔════╝██╔══██╗╚══██╔══╝╚██╗██╔╝
-██████╦╝███████║██╔██╗██║█████╗  ██████╔╝   ██║    ╚███╔╝
-██╔══██╗██╔══██║██║╚████║██╔══╝  ██╔══██╗   ██║    ██╔██╗
-██████╦╝██║  ██║██║ ╚███║███████╗██║  ██║   ██║   ██╔╝╚██╗
-╚═════╝ ╚═╝  ╚═╝╚═╝  ╚══╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝""")
+    print("| Script by: MR~SHADOW                        |")
+    print("| En Telegram como: @SH4DOWH4CK |")
+    print("| HACKING & CARDING ©                         |")
+
+def get_command():
+    return input("$/MR~SH4DOW@root > ")
+
+def main():
+    while True:
+        os.system('clear')  # Limpia la terminal
+        print_banner()  # Imprime el banner
+        command = get_command()  # Obtiene el comando del usuario
+        os.system(command)  # Ejecuta el comando
+
+if __name__ == "__main__":
+    main()
