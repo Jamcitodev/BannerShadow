@@ -18,7 +18,7 @@ banner = f"""
 | HACKING & CARDING : {color.verde}@SHADOWH4CK               {color.azul}|
 |=======================================================|{color.fin}
 
-{color.verde}C:/MR~SHADOW@root >{color.fin}
+{color.verde} echo -n "$/MR~SHADOW@root >  " {color.fin}
 """
 
 print(banner, end="")
